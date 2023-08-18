@@ -11,7 +11,7 @@
                 \DankiCode\Views\MainView::render('home');
             }else{
                 // Renderiza criar conta
-                \DankiCode\Views\MainView::render('registrar');
+                \DankiCode\Views\MainView::render('login');
             }
         }
     }
