@@ -32,11 +32,12 @@
         <div class="box-login">
             <form method="post">
                 <h3>Crie a sua conta:</h3>
-                <input type="text" name="email" placeholder="Digite o seu email..." required>
-                <input type="text" name="name" placeholder="Digite o seu nome..." required>
-                <input type="text" name="user" placeholder="Digite seu username..." required>
-                <input type="password" name="password" placeholder="Escolha uma senha..." required>
+                <input type="text" name="email" placeholder="Digite o seu Email..." required>
+                <input type="text" name="name" placeholder="Digite o seu Primeiro Nome..." required>
+                <input type="text" name="username" placeholder="Digite seu Username..." required>
+                <input type="password" name="password" placeholder="Digite sua Senha..." required>
                 <input type="submit" name="acao" value="Criar">
+                <input type="hidden" name="registrar" value="registrar"/>
             </form>
         </div><!--box-login-->
         

@@ -31,7 +31,7 @@
 
         <div class="box-login">
             <form method="post">
-                <input type="text" name="user" placeholder="login..." required>
+                <input type="text" name="user" placeholder="Email..." required>
                 <input type="password" name="password" placeholder="Senha..." required>
                 <input type="submit" name="acao" value="Login">
             </form>
