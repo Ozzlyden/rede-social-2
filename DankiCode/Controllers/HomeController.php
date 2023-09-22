@@ -6,7 +6,7 @@
         public function index(){
             
             // Verficacao de acesso
-            if(isset($_SESSION['login'])){
+            if(isset($_SESSION[''])){
                 // Renderiza a home
                 \DankiCode\Views\MainView::render('home');
             }else{

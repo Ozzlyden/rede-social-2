@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo INCLUDE_PATH_STATIC; ?>css/login.css"/>
-    <title>Login</title>
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH_STATIC; ?>css/registrar.css"/>
+    <title>Registrar</title>
 </head>
 <body>
     <header> 
@@ -31,11 +31,13 @@
 
         <div class="box-login">
             <form method="post">
-                <input type="text" name="user" placeholder="login..." required>
-                <input type="password" name="password" placeholder="Senha..." required>
-                <input type="submit" name="acao" value="Login">
+                <h3>Crie a sua conta:</h3>
+                <input type="text" name="email" placeholder="Digite o seu email..." required>
+                <input type="text" name="name" placeholder="Digite o seu nome..." required>
+                <input type="text" name="user" placeholder="Digite seu username..." required>
+                <input type="password" name="password" placeholder="Escolha uma senha..." required>
+                <input type="submit" name="acao" value="Criar">
             </form>
-            <p><a href="<?php echo INCLUDE_PATH;?>registrar">Criar conta</a></p>
         </div><!--box-login-->
         
     </div><!--form-conteiner-login-->
