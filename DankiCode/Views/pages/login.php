@@ -31,9 +31,10 @@
 
         <div class="box-login">
             <form method="post">
-                <input type="text" name="user" placeholder="Email..." required>
+                <input type="text" name="email" placeholder="Email..." required>
                 <input type="password" name="password" placeholder="Senha..." required>
                 <input type="submit" name="acao" value="Login">
+                <input type="hidden" name="login">
             </form>
             <p><a href="<?php echo INCLUDE_PATH;?>registrar">Criar conta</a></p>
         </div><!--box-login-->
