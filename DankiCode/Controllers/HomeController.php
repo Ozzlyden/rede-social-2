@@ -4,6 +4,13 @@
     class HomeController{
 
         public function index(){
+
+            //SISTEMA DE LOGOUT
+            if(isset($_GET['logout'])){
+                session_unset();
+                session_destroy();
+                \DankiCode\Utilidades::redirect(INCLUDE_PATH); 
+            }
             
             // SISTEMA DE LOGIN
             if(isset($_SESSION['login'])){
@@ -29,6 +36,8 @@
                         if(\DankiCode\Bcrypt::check($password, $passwordBd)){
                             // Usuario logado com sucesso
                             $_SESSION['login'] = $dados['email'];
+                            $_SESSION['name'] = explode(' ',$dados['name'])[0];
+
                             \DankiCode\Utilidades::alert('Logado com sucesso');
                             \DankiCode\Utilidades::redirect(INCLUDE_PATH);   
 
